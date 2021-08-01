@@ -78,23 +78,30 @@
         #body-container {
             padding: 0;
             background-color: white;
-            height: 800px;
+            height: 1350px;
             width: 1000px;
             margin: 0 auto;
 
         }
 
-        #about-me-summary {
+        #summary {
             float: left;
-            width: 1000px;
+            width: 950px;
             padding: 20px;
             height: 215px;
+
         }
 
         h2 {
             color: rgb(0, 0, 0);
             font-size: 30px;
             font-weight: normal;
+            padding: 30px;
+
+        }
+
+        #summary img {
+            width: 700px;
             padding: 30px;
 
         }
@@ -120,13 +127,26 @@
     <div id="body-container" class="clear">
         <div>
             <h2>Georeferencing</h2>
-            <div id="about-me-summary">
-                <p>Write here.</p>
+            <div id="summary">
+                <p>For this assignment, we were given a mock scenario: <br><br>"A developer on Galveston island has
+                    proposed draining a wetland area to build a shopping center. You work for an environmental
+                    non-profit. Your boss has asked you to develop a report showing how a waterbody in this area has
+                    already been extensively drained and developed over the last 80 years. She provides you with a
+                    scanned copy of an old paper map of Galveston from 1933 and a shapefile with a polygon outlining the
+                    area where the developer is interested in building the shopping center."<br><br> Using the
+                    information from the scenario, I georeferenced the scanned map to the 2018 ESRI imagery
+                    basemap at the time, in order to find the extent of the waterbody from 1933. I also digitized the
+                    extent of the waterbody from the 2018 basemap. The end result showed a map displaying the 1933
+                    waterbody extent, the 2018 extent, and their shared extent.</p>
+                <br><br>
+                <img src="assignment6_map.PNG">
+                </p>
+                <br><br>
 
             </div>
+
         </div>
-    </div>
-    </div>
+
     </div>
 
     <a id="top-link" href="#top">Back to top</a>
