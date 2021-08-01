@@ -1,0 +1,181 @@
+<html>
+
+
+<head>
+
+    <title>Geodatabase Design</title>
+
+    <style type="text/css">
+        #title-bar-container {
+            width: 100%;
+            margin: 0 auto;
+            height: 260px;
+            background-image: url(worldmap.jpg);
+        }
+
+        #title-bar {
+            width: 1000px;
+            height: 85px;
+            margin: 0 auto;
+            position: relative;
+            top: 175px;
+            background-color: #6e0f0f;
+        }
+
+        #title {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            font-weight: normal;
+            position: relative;
+            top: 18px;
+            left: 20px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #menu-bar-container {
+            border-top: 1px solid#CCCCCC;
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        #menu-bar {
+            width: 1000px;
+            margin: 0 auto;
+            height: 70px;
+            border-bottom: 1px solid#CCCCCC
+        }
+
+        #menu-bar a {
+            color: rgb(88, 88, 88);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0px 10px;
+            border-right: 1px solid #CCCCCC;
+            font-size: 18px;
+            position: relative;
+            top: 24px;
+        }
+
+        #menu-bar a:hover {
+            color: rgb(207, 0, 0);
+        }
+
+        #body-container {
+            padding: 0;
+            background-color: white;
+            height: 2450px;
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        #summary {
+            float: left;
+            width: 950px;
+            padding: 20px;
+            height: 215px;
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            font-weight: normal;
+            padding: 30px;
+
+        }
+
+        #summary img {
+            width: 900px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(206, 206, 206)">
+    <div id="title-bar-container">
+        <div id="title-bar">
+            <div id="title">
+                <h1>Kathryn's Project Portfolio</h1>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="menu-bar-container">
+        <div id="menu-bar">
+            <a href="index.html">Home</a>
+            <a href="independent_projects.html">Independent Projects</a>
+            <a href="course_assignments.html">Course Assignments</a>
+        </div>
+    </div>
+    <div id="body-container" class="clear">
+        <div>
+            <h2>Geodatabase Design for Advanced Filtering of Real Estate Listings</h2>
+            <div id="summary">
+                <p>This was a semester project for my Spatial Database Design course, where the goal was to utilize the
+                    geodatabase skills we learned throughout the semester to create our own geodatabase based on a topic
+                    of our choice.
+                    <br><br><br>For this
+                    project, I created a geodatabase for an advanced user
+                    experience in real estate search in
+                    the city of Corpus Christi, Texas. This new geodatabase gives the user access to a variety of points
+                    of interest and geography boundaries to query in their real estate search, allowing them to filter
+                    out real estate listings based on advanced proximity criteria. So far, this geodatabase includes
+                    points of interest such as recreation sites, supermarkets, fire departments, grade schools,
+                    colleges, and veterinarians. This geodatabase also includes zip code and school district boundaries.
+                    For the purpose of this project, two mock scenarios were created for families moving to the city.
+                    Each scenario defines a set of proximity requirements the family is looking for. The feature classes
+                    involved were queried and buffer analysis was applied to output land parcels that meet their
+                    requirements. This geodatabase offers the ability of being extended with other points of interest
+                    data that might relate to real estate search in the future.
+                    <br><br><br>
+                <h3>Scenario 1</h3>
+                A family with middle school-aged children want to move to a house within their current school district,
+                Corpus Christi ISD, that is located within a one-mile walking distance to a middle school while also
+                within a quarter-mile from any park. For this scenario, middle schools and parks within the Corpus
+                Christi ISD boundary were given a 1-mile buffer and 0.25-mile buffer, respectively. Only parcels within
+                both buffers were selected and exported as suitable parcels.
+                <img src="realestateScenario1.png">
+                <br><br><br>
+                <h3>Scenario 2</h3>
+                A family enjoys adopting senior pets that were abandoned due to their old age. The family is moving to
+                Corpus Christi and wants to live within 2.5 miles of a veterinarian so they can provide the best
+                possible care for their aging pets. For this scenario, all veterinarians in the dataset were given a
+                2.5-miles buffer. Only parcels within the veterinarian buffer were selected and exported as suitable
+                parcels.
+                <br><br>
+                <img src="realestateScenario2.png">
+                <br><br><br>
+                Overall, this geodatabase could allow the user to further refine their real estate search beyond what is
+                currently offered on popular real estate sites. Rather than finding a nice listing and then searching
+                the surrounding area only to find out it does not meet the user’s proximity wishes, this geodatabase
+                will speed up the search by only showing listings within the user’s proximity requirements. The user
+                will not only be able to search for real estate listings within a certain distance to or from certain
+                points of interest, but also can limit their search within or without specified school districts or zip
+                codes.
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a id="top-link" href="#top">Back to top</a>
+</body>
+
+</html>

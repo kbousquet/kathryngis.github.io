@@ -1,0 +1,177 @@
+<html>
+
+
+<head>
+
+    <title>Site Suitability</title>
+
+    <style type="text/css">
+        #title-bar-container {
+            width: 100%;
+            margin: 0 auto;
+            height: 260px;
+            background-image: url(worldmap.jpg);
+        }
+
+        #title-bar {
+            width: 1000px;
+            height: 85px;
+            margin: 0 auto;
+            position: relative;
+            top: 175px;
+            background-color: #6e0f0f;
+        }
+
+        #title {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            font-weight: normal;
+            position: relative;
+            top: 18px;
+            left: 20px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #menu-bar-container {
+            border-top: 1px solid#CCCCCC;
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        #menu-bar {
+            width: 1000px;
+            margin: 0 auto;
+            height: 70px;
+            border-bottom: 1px solid#CCCCCC
+        }
+
+        #menu-bar a {
+            color: rgb(88, 88, 88);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0px 10px;
+            border-right: 1px solid #CCCCCC;
+            font-size: 18px;
+            position: relative;
+            top: 24px;
+        }
+
+        #menu-bar a:hover {
+            color: rgb(207, 0, 0);
+        }
+
+        #body-container {
+            padding: 0;
+            background-color: white;
+            height: 4350px;
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        #summary {
+            float: left;
+            width: 950px;
+            padding: 20px;
+            height: 215px;
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            font-weight: normal;
+            padding: 30px;
+
+        }
+
+        #summary img {
+            width: 900px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(206, 206, 206)">
+    <div id="title-bar-container">
+        <div id="title-bar">
+            <div id="title">
+                <h1>Kathryn's Project Portfolio</h1>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="menu-bar-container">
+        <div id="menu-bar">
+            <a href="index.html">Home</a>
+            <a href="independent_projects.html">Independent Projects</a>
+            <a href="course_assignments.html">Course Assignments</a>
+        </div>
+    </div>
+    <div id="body-container" class="clear">
+        <div>
+            <h2>Site Suitability Analysis for New Solar Farms in West Texas</h2>
+            <div id="summary">
+                <p>This was a semester project for my Advanced Geospatial Analytics course, where the goal was to
+                    utilize the
+                    advanced geospatial skills we learned throughout the semester to create a project on a topic
+                    of our choice.
+                    <br><br><br>For this
+                    project, I decided to perform a site suitability analysis for solar farms, across West Texas. Type
+                    of land cover, proximity to protected lands, bodies of water, residential areas, and availability of
+                    existing transmission lines all play a key role in the selection of suitable land for new solar farm
+                    development. West Texas was chosen as a study site based on my Average Direct Normal Irradiance
+                    Across Texas map shown below:
+                    <br><br><br>
+                    <img src="irradiance.jpg">
+                    <br><br><br>
+                    Suitability layers were created for Aspect (land slope) and landcover suitability using
+                    classification.
+                    <br><br>
+                    <img src="3 views suitability w_scalebar.jpg">
+                    <br><br><br>
+                    This map shows the suitability distribution with a 500m buffer constraint from protected areas,
+                    water bodies, and roads (unsuitable areas shown in black). The counties are overlain for reference.
+
+                    <br><br>
+                    <img src="solarsuitability.jpg">
+                    <br><br><br>
+                    This map shows the suitability distribution with a 10,000 buffer around existing transmission lines.
+                    Actual transmission lines are not shown to prevent clutter.
+                    <br><br>
+                    <img src="transmission_lines.jpg">
+                    <br><br><br>
+                    Overall, the areas with the highest solar farm suitability in West Texas are sparse. Towards the
+                    west, Hudspeth, Jeff Davis, Presidio, Brewster, Pecos, Terrell, and Culberson Counties all appear to
+                    have highly suitable lands ripe for further site suitability analysis. There appears to be a prime
+                    spot, located within 10,000m of a transmission line, between Jeff Davis, Brewster, and Presidio
+                    Counties. A majority of the other highly suitable areas lie outside the range of any existing
+                    transmission line. Towards the eastern side of West Texas, Andrews, Borden, Coke, and Tom Green
+                    Counties also have areas of high suitability. However, there is a high density of roads, which
+                    suggests they are more densely populated and might not be the best areas for solar farm development.
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a id="top-link" href="#top">Back to top</a>
+</body>
+
+</html>
